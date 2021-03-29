@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 500% 500%;
+    animation: animeBG 3s ease infinite;
+    animation-direction: alternate;
+  
+  }
+  
+  @keyframes animeBG{
+    0% {background-position: 0%}
+    100% {background-position: 100%}
+  }
+
+  
+.renk-kutu{
+  box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;
+  -moz-box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;;
+  -webkit-box-shadow: 0.5em -0.5em 0.4em red, 0.5em 0.5em 0.4em gold, -0.5em 0.5em 0.4em lime, -0.5em -0.5em 0.4em blue;;
+  padding:20px;
+  font:16px Arial, Helvetica, sans-serif;
+  text-align: justify;
+  position: absolute;
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  margin-left: -300px;
+  margin-top: -150px;
+  background:#CCC;
+  width: 600px;
+  height: 460px;
+ 
+ }
+
+ 

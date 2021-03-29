@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KURU EDA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="renk-kutu">
+        <div style="width:200px; padding:5px">
+        </div>
+
+        <script>
+    var girdi = prompt(" Lütfen giriş yapınız!.");
+    var regex = /^[A-Za-z ]+$/;
+    var girdiDizisi = girdi.split("");
+    if (girdi.length < 1 || girdi.length > 9) 
+    {
+        alert("Lütfen min1  max9 karakter arasında bir değer giriniz!.");
+    } 
+    else if(regex.test(girdi) === false) 
+    {
+        alert("Lütfen özel karakter ve sayi kullanmayınız.!");
+    }
+    else if (girdi / 1 == girdi) 
+    {
+        alert("Lütfen Sayı Girişi yapmayınız.!");
+    }
+    else 
+    {
+        document.write("<h2 style='z-index:9999; margin-top: -10px; text-align: center;'> Girdi: "+ girdi +"</h2>");
+        for(var i = 0; i < girdiDizisi.length; i++) {
+        var rastgeleCumle = '';
+        for(var j = 0; j <= i; j++) {
+            rastgeleCumle = rastgeleCumle + girdi.charAt(Math.floor(Math.random() * girdi.length));
+        }
+        var kacinciKarakter = i + 1;
+        document.write(
+            "<div style='text-align:center;'>"+kacinciKarakter + " karakterli: " + rastgeleCumle+"</div>"
+        );
+    }
+    }
+</script>
+</body>
+</html>
